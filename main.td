@@ -83,7 +83,7 @@ fn view_anime(id) {
 		fs.writefile(imgname, img)
 	}
 	
-	cmd := os.exec("tender.exe", "view.td", json.encode(anime), imgname)
+	cmd := os.exec("tender", "view.td", json.encode(anime), imgname)
 	// cmd.stdout(os.stdout)
 	cmd.start()
 }
