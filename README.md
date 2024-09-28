@@ -4,8 +4,8 @@ AnimeDB is a CLI-based offline anime database built using [Tender](https://githu
 
 ## Preview
 
-![preview_1](./preview/preview_1.png)
 ![preview_0](./preview/preview_0.png)
+![preview_1](./preview/preview_1.png)
 
 ## Quick Start
 
@@ -29,10 +29,10 @@ In app commands:
 
 ```
 Commands:
-search <name>    ->    To search for an anime by its name
-view             ->    To view anime details in a graphical user interface (GUI)
-help             ->    To display this help message
-exit             ->    To exit the application
+search <name>  ->    To search for an anime by its name
+view   <id>    ->    To view anime details in a graphical user interface (GUI)
+help           ->    To display this help message
+exit           ->    To exit the application
 ```
 
 ## Platform

@@ -72,11 +72,11 @@ fn view_anime(id) {
 		return
 	}
 	
-	if !fs.exists("temp") {
-		fs.mkdir("temp")
+	if !fs.exists("cache/image") {
+		fs.mkdir_all("cache/image")
 	}
 	
-	imgname := format("temp/%s.png", crypto.md5(anime.picture))
+	imgname := format("cache/image/%s.png", crypto.md5(anime.picture))
 	
 	if !fs.exists(imgname) {
 		img := http.get(anime.picture)
@@ -84,7 +84,7 @@ fn view_anime(id) {
 	}
 	
 	cmd := os.exec("tender", "view.td", json.encode(anime), imgname)
-	// cmd.stdout(os.stdout)
+	cmd.stdout(os.stdout)
 	cmd.start()
 }
 
