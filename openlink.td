@@ -14,8 +14,5 @@ export fn(url) {
 	else {
         return
     }
-	
-	debug(cmd)
-
-	cmd.start()
+    cmd.start()
 }
